@@ -4,7 +4,7 @@ import hero from '../assets/catanddogg.webp';
 
 export default function Hero() {
   return (
-    <section aria-label='Hero Section'>
+    <section>
       <div className='relative h-[100vh] lg:max-h-[40rem] max-h-[25rem] sm:max-h-[30rem] text-white overflow-hidden'>
         <div className='absolute inset-0 h-full overflow-hidden rounded-xl lg:max-h-[40rem] max-h-[25rem] sm:max-h-[30rem]'>
           <img
