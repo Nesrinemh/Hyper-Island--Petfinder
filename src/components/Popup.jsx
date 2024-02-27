@@ -8,7 +8,7 @@ export default function Popup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 2000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -46,10 +46,13 @@ export default function Popup() {
             leaveFrom='opacity-100 translate-y-0 sm:scale-100'
             leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
           >
-            <div className='relative inline-block align-bottom bg-[#f0ead2] rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6'>
+            <div className='relative inline-block align-bottom bg-gray-100 rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6'>
               <div>
                 <div className='mx-auto flex items-center justify-center h-40 w-40 rounded-full bg-green-100'>
-                  <img src={ebook}></img>
+                  <img
+                    src={ebook}
+                    alt='cover of ebook titled how to take care about your pets'
+                  ></img>
                 </div>
                 <div className='mt-3 text-center sm:mt-5'>
                   <Dialog.Title
@@ -78,17 +81,35 @@ export default function Popup() {
                     <button
                       type='submit'
                       onClick={() => setShowPopup(false)}
-                      className='flex-none rounded-md bg-[#a98467] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#6c584c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
+                      className='flex-none rounded-md bg-[#6a5240] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#6e8139] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
                     >
                       Send mine!
                     </button>
                   </div>
+                  <Transition.Child className='flex  text-left mt-2 text-sm'>
+                    <input
+                      id='gpdr'
+                      name='gpdr'
+                      type='checkbox'
+                      required
+                    />
+                    <label htmlFor='gpdr' className=' pl-2'>
+                      I accept your{' '}
+                      <a
+                        href='#'
+                        className='hover:text-blue-700 underline'
+                      >
+                        Privacy Policy and Terms of Use
+                      </a>
+                      .
+                    </label>
+                  </Transition.Child>
                 </div>
               </div>
               <div className='mt-5 sm:mt-6'>
                 <button
                   type='button'
-                  className='inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#a98467] text-base font-medium text-white hover:bg-[#6c584c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm'
+                  className='inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#6a5240] text-base font-medium text-white hover:bg-[#6e8139] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm'
                   onClick={() => setShowPopup(false)}
                 >
                   No, thank you!
