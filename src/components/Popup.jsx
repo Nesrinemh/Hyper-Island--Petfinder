@@ -54,7 +54,7 @@ export default function Popup() {
                 <div className='mt-3 text-center sm:mt-5'>
                   <Dialog.Title
                     as='h3'
-                    className='text-lg leading-6 font-medium text-gray-900'
+                    className='text-basic leading-6 font-medium text-gray-900'
                   >
                     All your answers in this FREE ebook! <br />
                     Enter your email to catch yours!
