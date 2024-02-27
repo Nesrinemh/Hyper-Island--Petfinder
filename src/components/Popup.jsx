@@ -56,7 +56,7 @@ export default function Popup() {
                     as='h3'
                     className='text-lg leading-6 font-medium text-gray-900'
                   >
-                    All your answers in this ebook! <br />
+                    All your answers in this FREE ebook! <br />
                     Enter your email to catch yours!
                   </Dialog.Title>
                   <div className='mt-6 flex max-w-md gap-x-4'>
