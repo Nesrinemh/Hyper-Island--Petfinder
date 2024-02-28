@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'Adoption Process', href: '#' },
     { name: 'About Us', href: '#' },
     { name: 'Success Stories', href: '#' },
+    { name: 'Contact Us', href: '#' },
   ];
 
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Header() {
       }`}
     >
       <nav
-        className='flex items-center justify-between lg:px-4'
+        className='flex items-center justify-between px-4 lg:px-4'
         aria-label='Global'
       >
         <div className='flex lg:flex-1 '>
@@ -49,7 +50,7 @@ export default function Header() {
         <div className='flex lg:hidden'>
           <button
             type='button'
-            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+            className=' inline-flex items-center justify-center rounded-md text-gray-700'
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className='sr-only'>Open main menu</span>

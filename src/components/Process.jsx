@@ -42,9 +42,8 @@ export default function Process() {
         className='md:max-w-[15rem] border p-6 rounded-xl shadow-sm bg-white'
         aria-label={`Card ${step.id} :  ${step.title} `}
       >
-        <div className='flex items-center justify-center w-14 h-14 bg-[#6c584c] rounded-full'>
+        <div className='flex items-center justify-center w-14 h-14 bg-[#A88467] rounded-full'>
           <span
-            role='Icon'
             aria-label={`Icon representing step: ${step.id} ${step.title}`}
             className='text-white text-[1.5rem]'
           >
