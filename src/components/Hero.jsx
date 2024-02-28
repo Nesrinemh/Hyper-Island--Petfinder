@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import hero from '../assets/catanddogg.webp';
 import heroMobile from '../assets/catanddogg-mb.webp';
 
