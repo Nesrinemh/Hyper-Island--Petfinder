@@ -20,7 +20,7 @@ export default function AboutUs() {
         <p className='max-w-[40rem]'>
           Welcome to Petfinder where our passion for pets fuels our
           mission to simplify pet adoption. As experienced adopters,
-          we're here to guide you every step of the way.
+          we are here to guide you every step of the way.
         </p>
 
         <p className='max-w-[40rem]'>
